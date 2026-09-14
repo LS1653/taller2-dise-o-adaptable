@@ -322,6 +322,14 @@ p {
   box-shadow: none;
 }
 
+.world-art iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  pointer-events: none;
+}
+
 /* Oscurece ligeramente el fondo para que el texto siga siendo legible. */
 .world-art::after {
   background:
@@ -363,6 +371,13 @@ p {
   margin: 24px 0;
   font-size: clamp(1.15rem, 2vw, 1.65rem);
   font-weight: 700;
+}
+
+.world-panel h1,
+.combat-copy h2 {
+  font-size: clamp(3rem, 5.5vw, 6.5rem);
+  line-height: 0.9;
+  white-space: nowrap;
 }
 
 .world-panel p:not(.eyebrow),
@@ -408,6 +423,20 @@ p {
 .history-art {
   min-height: 72vh;
   border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+}
+
+.history-image{
+    background-image:
+        linear-gradient(
+        180deg,
+        rgba(12, 13, 15, 0.05),
+        rgba(12, 13, 15, 0.45)
+        ),
+        url("../img/historia.png");
+
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* ---------- CHARACTERS ---------- */
@@ -485,9 +514,70 @@ p {
 
 .character-image {
   min-height: 360px;
-  background:
-    radial-gradient(circle at 70% 20%, rgba(255,48,79,.45), transparent 25%),
-    linear-gradient(145deg, #b9bcc0, #55595e);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.character-miyabi{
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(12, 13, 15, 0.05),
+      rgba(12, 13, 15, 0.45)
+    ),
+    url("../img/Miyabi.png");
+}
+
+.character-ellen{
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(12, 13, 15, 0.05),
+      rgba(12, 13, 15, 0.45)
+    ),
+    url("../img/Ellen.png");
+}
+
+.character-jane{
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(12, 13, 15, 0.05),
+      rgba(12, 13, 15, 0.45)
+    ),
+    url("../img/Jane.png");
+}
+
+.character-koleda{
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(12, 13, 15, 0.05),
+      rgba(12, 13, 15, 0.45)
+    ),
+    url("../img/Koleda.png");
+}
+
+.character-orphie{
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(12, 13, 15, 0.05),
+      rgba(12, 13, 15, 0.45)
+    ),
+    url("../img/Orphie.png");
+}
+
+.character-vivian{
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(12, 13, 15, 0.05),
+      rgba(12, 13, 15, 0.45)
+    ),
+    url("../img/Vivian.png");
 }
 
 .character-info {
@@ -533,10 +623,15 @@ p {
 }
 
 .combat-media {
-  min-height: calc(100vh - var(--nav-height));
-  display: grid;
-  place-items: center;
-  border-right: 1px solid rgba(255,255,255,.16);
+  overflow: hidden;
+  position: relative;
+}
+
+.combat-media iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
 }
 
 .play-icon {
@@ -634,9 +729,70 @@ p {
 
 .bangboo-image {
   min-height: 190px;
-  background:
-    radial-gradient(circle at 70% 30%, rgba(35,217,255,.2), transparent 30%),
-    linear-gradient(135deg, #62666b, #a6a9ad);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bangboo-1{
+      background-image:
+    linear-gradient(
+      180deg,
+      rgba(12, 13, 15, 0.05),
+      rgba(12, 13, 15, 0.35)
+    ),
+    url("../img/remiel.png");
+}
+
+.bangboo-2{
+      background-image:
+    linear-gradient(
+      180deg,
+      rgba(12, 13, 15, 0.05),
+      rgba(12, 13, 15, 0.35)
+    ),
+    url("../img/shark.png");
+}
+
+.bangboo-3{
+      background-image:
+    linear-gradient(
+      180deg,
+      rgba(12, 13, 15, 0.05),
+      rgba(12, 13, 15, 0.35)
+    ),
+    url("../img/mayordomo.png");
+}
+
+.bangboo-4{
+      background-image:
+    linear-gradient(
+      180deg,
+      rgba(12, 13, 15, 0.05),
+      rgba(12, 13, 15, 0.35)
+    ),
+    url("../img/swat.png");
+}
+
+.bangboo-5{
+      background-image:
+    linear-gradient(
+      180deg,
+      rgba(12, 13, 15, 0.05),
+      rgba(12, 13, 15, 0.35)
+    ),
+    url("../img/aguacate.png");
+}
+
+.bangboo-6{
+      background-image:
+    linear-gradient(
+      180deg,
+      rgba(12, 13, 15, 0.05),
+      rgba(12, 13, 15, 0.35)
+    ),
+    url("../img/muñeco.png");
 }
 
 .bangboo-card > div:last-child {
