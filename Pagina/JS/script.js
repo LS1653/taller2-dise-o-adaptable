@@ -68,6 +68,9 @@ document.addEventListener("DOMContentLoaded", () => {
       return card ? card.getBoundingClientRect().width + 18 : 400;
     };
 
+    // ---------------------------
+    // Flecha izquierda
+    // ---------------------------
     prevButton?.addEventListener("click", () => {
       track.scrollBy({
         left: -getScrollAmount(),
@@ -75,6 +78,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
+    // ---------------------------
+    // Flecha derecha
+    // ---------------------------
     nextButton?.addEventListener("click", () => {
       track.scrollBy({
         left: getScrollAmount(),
@@ -82,18 +88,25 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-    // Mouse drag
+    // ---------------------------
+    // Mouse / touch drag
+    // ---------------------------
+
     let isDragging = false;
     let startX = 0;
     let startScroll = 0;
 
     track.addEventListener("pointerdown", (event) => {
+      // Solo usamos click izquierdo cuando es mouse
       if (event.pointerType === "mouse" && event.button !== 0) return;
 
       isDragging = true;
+
       startX = event.clientX;
       startScroll = track.scrollLeft;
+
       track.classList.add("is-dragging");
+
       track.setPointerCapture?.(event.pointerId);
     });
 
@@ -101,6 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!isDragging) return;
 
       const distance = event.clientX - startX;
+
       track.scrollLeft = startScroll - distance;
     });
 
@@ -112,23 +126,12 @@ document.addEventListener("DOMContentLoaded", () => {
     track.addEventListener("pointerup", stopDragging);
     track.addEventListener("pointercancel", stopDragging);
     track.addEventListener("pointerleave", stopDragging);
-
-    // Wheel over the cards = horizontal movement
-    track.addEventListener(
-      "wheel",
-      (event) => {
-        if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
-          event.preventDefault();
-          track.scrollLeft += event.deltaY;
-        }
-      },
-      { passive: false }
-    );
   }
 
   // ---------------------------
   // Small entrance animation
   // ---------------------------
+
   const animatedElements = document.querySelectorAll(
     ".glass-panel, .character-card, .bangboo-card, .combat-media"
   );
@@ -140,17 +143,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
         entry.target.style.opacity = "1";
         entry.target.style.transform = "translateY(0)";
+
         observerInstance.unobserve(entry.target);
       });
     },
-    { threshold: 0.12 }
+    {
+      threshold: 0.12,
+    }
   );
 
   animatedElements.forEach((element) => {
     element.style.opacity = "0";
-    element.style.transform = "translateY(22px)";
+
+    element.style.transform =
+      "translateY(22px)";
+
     element.style.transition =
       "opacity .6s ease, transform .6s cubic-bezier(.2,.8,.2,1)";
+
     revealObserver.observe(element);
   });
 });
