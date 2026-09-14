@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[NOMBRE] — [PROFESION]. [DESCRIPCION DEL PORTAFOLIO].">
+
+    <meta property="og:title" content="[NOMBRE] | [PROFESION]">
+    <meta property="og:description" content="Portafolio de [NOMBRE] — [ESPECIALIDAD]">
+    <meta property="og:type" content="website">
+
+    <link rel="alternate" type="application/json" href="about.json" title="Perfil estructurado (JSON)">
+
+    <title>Zenless Zone Zero — Landing Page</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4lH6w4UC1cD6FVY5Yx6mtpn67fpMsLTO0wHVkT-lQew&s=10" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+  <!-- =========================================================
+       NAVBAR
+       ========================================================= -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="brand" href="#world">Zenless Zone Zero</a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a class="nav-link is-active" href="#world">World</a></li>
+        <li><a class="nav-link" href="#history">History</a></li>
+        <li><a class="nav-link" href="#characters">Characters</a></li>
+        <li><a class="nav-link" href="#combat">Combat</a></li>
+        <li><a class="nav-link" href="#bangboo">Bangboo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- =======================================================
+         01 — WORLD
+         ======================================================= -->
+    <section id="world" class="section world-section">
+      <div class="world-art art-placeholder" aria-label="Área reservada para imagen del mundo">
+        <span class="placeholder-cross"></span>
+        <span class="art-label">NEW ERIDU</span>
+        <span class="art-small-label">01 / WORLD</span>
+      </div>
+
+      <article class="glass-panel world-panel">
+        <p class="eyebrow">ZENLESS ZONE ZERO</p>
+        <h1>World</h1>
+        <p class="panel-lead">Explora un mundo urbano al borde del caos.</p>
+        <p>
+          Tras el surgimiento de las Hollows, la antigua civilización cambió
+          para siempre. New Eridu se convirtió en uno de los últimos refugios
+          de la humanidad y en el centro de una nueva era.
+        </p>
+        <p>
+          Entre neones, anomalías y tecnología, agentes de distintos grupos
+          se enfrentan a los peligros que aparecen dentro de las Hollows.
+        </p>
+
+        <a class="text-link" href="#history">
+          Descubrir la historia <span>↗</span>
+        </a>
+      </article>
+
+      <span class="section-tag">01 — WORLD</span>
+    </section>
+
+    <!-- =======================================================
+         02 — HISTORY
+         ======================================================= -->
+    <section id="history" class="section history-section">
+      <article class="history-copy glass-panel">
+        <p class="eyebrow">THE STORY</p>
+        <h2>History</h2>
+        <h3>Una ciudad construida después del desastre.</h3>
+
+        <p>
+          Las Hollows son fenómenos espaciales que distorsionan la realidad,
+          consumen ciudades y generan criaturas conocidas como Ethereals.
+        </p>
+        <p>
+          New Eridu sobrevivió gracias a sus recursos, su tecnología y a las
+          personas capaces de entrar en estos espacios para recuperar
+          materiales, combatir amenazas y descubrir sus secretos.
+        </p>
+        <p>
+          Detrás de esta aparente estabilidad existen corporaciones, facciones
+          y agentes con intereses muy diferentes.
+        </p>
+      </article>
+
+      <div class="history-art art-placeholder" aria-label="Área reservada para imagen de historia">
+        <span class="placeholder-cross"></span>
+        <span class="art-label">HOLLOW</span>
+        <span class="art-small-label">02 / HISTORY</span>
+      </div>
+
+      <span class="section-tag">02 — HISTORY</span>
+    </section>
+
+    <!-- =======================================================
+         03 — CHARACTERS
+         ======================================================= -->
+    <section id="characters" class="section characters-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">MEET THE AGENTS</p>
+          <h2>Characters</h2>
+        </div>
+
+        <div class="slider-controls" aria-label="Controles de personajes">
+          <button class="slider-button" type="button" data-scroll="prev" aria-label="Personajes anteriores">←</button>
+          <button class="slider-button" type="button" data-scroll="next" aria-label="Personajes siguientes">→</button>
+        </div>
+      </div>
+
+      <div class="character-track" tabindex="0" aria-label="Lista horizontal de personajes">
+        <article class="character-card">
+          <div class="character-image art-placeholder">
+            <span class="placeholder-cross"></span>
+            <span class="character-number">01</span>
+          </div>
+          <div class="character-info">
+            <span>AGENT</span>
+            <h3>Wise</h3>
+            <p>Proxy · Cunning Hares</p>
+          </div>
+        </article>
+
+        <article class="character-card">
+          <div class="character-image art-placeholder">
+            <span class="placeholder-cross"></span>
+            <span class="character-number">02</span>
+          </div>
+          <div class="character-info">
+            <span>AGENT</span>
+            <h3>Anby</h3>
+            <p>Electric · Stun</p>
+          </div>
+        </article>
+
+        <article class="character-card">
+          <div class="character-image art-placeholder">
+            <span class="placeholder-cross"></span>
+            <span class="character-number">03</span>
+          </div>
+          <div class="character-info">
+            <span>AGENT</span>
+            <h3>Nekomata</h3>
+            <p>Physical · Attack</p>
+          </div>
+        </article>
+
+        <article class="character-card">
+          <div class="character-image art-placeholder">
+            <span class="placeholder-cross"></span>
+            <span class="character-number">04</span>
+          </div>
+          <div class="character-info">
+            <span>AGENT</span>
+            <h3>Ellen</h3>
+            <p>Ice · Attack</p>
+          </div>
+        </article>
+
+        <article class="character-card">
+          <div class="character-image art-placeholder">
+            <span class="placeholder-cross"></span>
+            <span class="character-number">05</span>
+          </div>
+          <div class="character-info">
+            <span>AGENT</span>
+            <h3>Lycaon</h3>
+            <p>Ice · Stun</p>
+          </div>
+        </article>
+
+        <article class="character-card">
+          <div class="character-image art-placeholder">
+            <span class="placeholder-cross"></span>
+            <span class="character-number">06</span>
+          </div>
+          <div class="character-info">
+            <span>AGENT</span>
+            <h3>Nicole</h3>
+            <p>Ether · Support</p>
+          </div>
+        </article>
+      </div>
+
+      <span class="section-tag">03 — CHARACTERS</span>
+    </section>
+
+    <!-- =======================================================
+         04 — COMBAT
+         ======================================================= -->
+    <section id="combat" class="section combat-section">
+      <div class="combat-media art-placeholder">
+        <span class="placeholder-cross"></span>
+        <span class="play-icon">▶</span>
+        <span class="art-label">VIDEO</span>
+        <span class="art-small-label">COMBAT SYSTEM</span>
+      </div>
+
+      <article class="combat-copy">
+        <p class="eyebrow">FAST. FLASHY. REACTIVE.</p>
+        <h2>Combat</h2>
+        <h3>Encadena ataques. Cambia de agente. Rompe el ritmo.</h3>
+        <p>
+          Combina ataques normales, habilidades, evasiones y cambios de agente
+          para crear cadenas de combate rápidas y visualmente espectaculares.
+        </p>
+        <p>
+          El sistema recompensa el timing: ataca, esquiva y contraataca para
+          mantener la presión sobre los enemigos.
+        </p>
+
+        <a class="accent-button" href="#bangboo">Ver más <span>→</span></a>
+      </article>
+
+      <span class="section-tag">04 — COMBAT</span>
+    </section>
+
+    <!-- =======================================================
+         05 — BANGBOO
+         ======================================================= -->
+    <section id="bangboo" class="section bangboo-section">
+      <div class="bangboo-intro">
+        <p class="eyebrow">SMALL BUT USEFUL</p>
+        <h2>Bangboo</h2>
+        <p>
+          Pequeños compañeros mecánicos que ayudan a los habitantes de New Eridu.
+          Algunos pueden acompañarte durante tus expediciones y aportar apoyo
+          adicional durante el combate.
+        </p>
+      </div>
+
+      <div class="bangboo-grid">
+        <article class="bangboo-card">
+          <div class="bangboo-image art-placeholder"><span class="placeholder-cross"></span></div>
+          <div>
+            <span>01</span>
+            <h3>Amillion</h3>
+            <p>Compañero de apoyo urbano.</p>
+          </div>
+        </article>
+
+        <article class="bangboo-card">
+          <div class="bangboo-image art-placeholder"><span class="placeholder-cross"></span></div>
+          <div>
+            <span>02</span>
+            <h3>Butler</h3>
+            <p>Servicio y soporte para el equipo.</p>
+          </div>
+        </article>
+
+        <article class="bangboo-card">
+          <div class="bangboo-image art-placeholder"><span class="placeholder-cross"></span></div>
+          <div>
+            <span>03</span>
+            <h3>Rocketboo</h3>
+            <p>Apoyo ofensivo de alta movilidad.</p>
+          </div>
+        </article>
+
+        <article class="bangboo-card">
+          <div class="bangboo-image art-placeholder"><span class="placeholder-cross"></span></div>
+          <div>
+            <span>04</span>
+            <h3>Exploreboo</h3>
+            <p>Especialista en exploración.</p>
+          </div>
+        </article>
+
+        <article class="bangboo-card">
+          <div class="bangboo-image art-placeholder"><span class="placeholder-cross"></span></div>
+          <div>
+            <span>05</span>
+            <h3>Paperboo</h3>
+            <p>Un pequeño aliado para tu aventura.</p>
+          </div>
+        </article>
+
+        <article class="bangboo-card">
+          <div class="bangboo-image art-placeholder"><span class="placeholder-cross"></span></div>
+          <div>
+            <span>06</span>
+            <h3>Electroboo</h3>
+            <p>Soporte especializado en energía.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: separado visualmente como en el mockup -->
+  <footer class="site-footer">
+    <p>Contacto: <a href="mailto:correoesteban@whatev.com">correoesteban@whatev.com</a></p>
+    <p>@2026</p>
+  </footer>
+
+  <script src="../JS/script.js"></script>
+</body>
+</html>
