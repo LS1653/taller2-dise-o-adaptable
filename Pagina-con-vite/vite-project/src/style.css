@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* ==========================================================
    ZZZ LANDING PAGE — styles.css
    Estética académica inspirada en una interfaz urbana/anime:
@@ -374,8 +376,7 @@ p {
 }
 
 .world-panel h1,
-.combat-copy h2,
-.history-copy h2 {
+.combat-copy h2 {
   font-size: clamp(3rem, 5.5vw, 6.5rem);
   line-height: 0.9;
   white-space: nowrap;
@@ -433,7 +434,7 @@ p {
         rgba(12, 13, 15, 0.05),
         rgba(12, 13, 15, 0.45)
         ),
-        url("../img/historia.png");
+        url("/img/historia.png");
 
     background-size: cover;
   background-position: center;
@@ -528,7 +529,7 @@ p {
       rgba(12, 13, 15, 0.05),
       rgba(12, 13, 15, 0.45)
     ),
-    url("../img/Miyabi.png");
+    url("/img/Miyabi.png");
 }
 
 .character-ellen{
@@ -538,7 +539,7 @@ p {
       rgba(12, 13, 15, 0.05),
       rgba(12, 13, 15, 0.45)
     ),
-    url("../img/Ellen.png");
+    url("/img/Ellen.png");
 }
 
 .character-jane{
@@ -548,7 +549,7 @@ p {
       rgba(12, 13, 15, 0.05),
       rgba(12, 13, 15, 0.45)
     ),
-    url("../img/Jane.png");
+    url("/img/Jane.png");
 }
 
 .character-koleda{
@@ -558,7 +559,7 @@ p {
       rgba(12, 13, 15, 0.05),
       rgba(12, 13, 15, 0.45)
     ),
-    url("../img/Koleda.png");
+    url("/img/Koleda.png");
 }
 
 .character-orphie{
@@ -568,7 +569,7 @@ p {
       rgba(12, 13, 15, 0.05),
       rgba(12, 13, 15, 0.45)
     ),
-    url("../img/Orphie.png");
+    url("/img/Orphie.png");
 }
 
 .character-vivian{
@@ -578,7 +579,7 @@ p {
       rgba(12, 13, 15, 0.05),
       rgba(12, 13, 15, 0.45)
     ),
-    url("../img/Vivian.png");
+    url("/img/Vivian.png");
 }
 
 .character-info {
@@ -743,7 +744,7 @@ p {
       rgba(12, 13, 15, 0.05),
       rgba(12, 13, 15, 0.35)
     ),
-    url("../img/remiel.png");
+    url("/img/remiel.png");
 }
 
 .bangboo-2{
@@ -753,7 +754,7 @@ p {
       rgba(12, 13, 15, 0.05),
       rgba(12, 13, 15, 0.35)
     ),
-    url("../img/shark.png");
+    url("/img/shark.png");
 }
 
 .bangboo-3{
@@ -763,7 +764,7 @@ p {
       rgba(12, 13, 15, 0.05),
       rgba(12, 13, 15, 0.35)
     ),
-    url("../img/mayordomo.png");
+    url("/img/mayordomo.png");
 }
 
 .bangboo-4{
@@ -773,7 +774,7 @@ p {
       rgba(12, 13, 15, 0.05),
       rgba(12, 13, 15, 0.35)
     ),
-    url("../img/swat.png");
+    url("/img/swat.png");
 }
 
 .bangboo-5{
@@ -783,7 +784,7 @@ p {
       rgba(12, 13, 15, 0.05),
       rgba(12, 13, 15, 0.35)
     ),
-    url("../img/aguacate.png");
+    url("/img/aguacate.png");
 }
 
 .bangboo-6{
@@ -793,7 +794,7 @@ p {
       rgba(12, 13, 15, 0.05),
       rgba(12, 13, 15, 0.35)
     ),
-    url("../img/muñeco.png");
+    url("/img/muñeco.png");
 }
 
 .bangboo-card > div:last-child {

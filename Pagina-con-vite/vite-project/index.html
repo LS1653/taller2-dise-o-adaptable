@@ -10,17 +10,17 @@
 
     <title>Zenless Zone Zero — Landing Page</title>
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4lH6w4UC1cD6FVY5Yx6mtpn67fpMsLTO0wHVkT-lQew&s=10" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
+    
 
-    <link rel="stylesheet" href="../CSS/styles.css">
+    
 </head>
 <body>
   <!-- =========================================================
        NAVBAR
        ========================================================= -->
-  <header class="site-header">
-    <nav class="navbar" aria-label="Navegación principal">
-      <a class="brand" href="#world">Zenless Zone Zero</a>
+  <header class="site-header fixed top-0 left-0 z-50 h-[76px] w-full border-b border-white/15 bg-[#0c0d0f]/90 backdrop-blur-[16px]">
+    <nav class="navbar mx-auto flex h-full w-[calc(100%-40px)] max-w-[1400px] items-center justify-between" aria-label="Navegación principal">
+      <a class="brand whitespace-nowrap text-[clamp(1.1rem,2vw,1.55rem)] font-extrabold uppercase tracking-[-0.04em]" href="#world">Zenless Zone Zero</a>
 
       <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -54,9 +54,9 @@
         <span class="art-small-label">01 / WORLD</span>
       </div>
 
-      <article class="glass-panel world-panel">
+      <article class="world-panel glass-panel">
         <p class="eyebrow">ZENLESS ZONE ZERO</p>
-        <h1>World</h1>
+        <h1 class="text-[clamp(3rem,5.5vw,6.5rem)] font-bold uppercase leading-[0.9] tracking-[-0.07em]">World</h1>
         <p class="panel-lead">Explora un mundo urbano al borde del caos.</p>
         <p>
           Tras el surgimiento de los Hollows, la antigua civilización cambió
@@ -80,9 +80,9 @@
          02 — HISTORY
          ======================================================= -->
     <section id="history" class="section history-section">
-      <article class="history-copy glass-panel">
+      <article class="history-copy glass-panel max-w-[800px]">
         <p class="eyebrow">THE STORY</p>
-        <h2>History</h2>
+        <h2 class="text-[clamp(3.5rem,7vw,7rem)] uppercase leading-[0.95] tracking-[-0.07em]">History</h2>
         <h3>Una ciudad construida después del desastre.</h3>
 
         <p>
@@ -100,7 +100,7 @@
         </p>
       </article>
 
-      <div class="history-art history-image art-placeholder" aria-label="Área reservada para imagen de historia">
+      <div class="history-art history-image min-h-[72vh] art-placeholder" aria-label="Área reservada para imagen de historia">
         <span class="placeholder-cross"></span>
         <span class="art-label">HOLLOW</span>
         <span class="art-small-label">02 / HISTORY</span>
@@ -113,20 +113,20 @@
          03 — CHARACTERS
          ======================================================= -->
     <section id="characters" class="section characters-section">
-      <div class="section-heading">
+      <div class="section-heading mx-auto mb-[35px] flex w-[min(100%-5vw,1400px)] items-end justify-between pr-[5vw]">
         <div>
           <p class="eyebrow">MEET THE AGENTS</p>
           <h2>Characters</h2>
         </div>
 
-        <div class="slider-controls" aria-label="Controles de personajes">
-          <button class="slider-button" type="button" data-scroll="prev" aria-label="Personajes anteriores">←</button>
-          <button class="slider-button" type="button" data-scroll="next" aria-label="Personajes siguientes">→</button>
+        <div class="slider-controls flex gap-[10px]" aria-label="Controles de personajes">
+          <button class="slider-button h-12 w-12" type="button" data-scroll="prev" aria-label="Personajes anteriores">←</button>
+          <button class="slider-button h-12 w-12" type="button" data-scroll="next" aria-label="Personajes siguientes">→</button>
         </div>
       </div>
 
-      <div class="character-track" tabindex="0" aria-label="Lista horizontal de personajes">
-        <article class="character-card">
+      <div class="character-track flex gap-[18px] overflow-x-auto overflow-y-hidden px-[5vw] pb-10 pt-5" tabindex="0" aria-label="Lista horizontal de personajes">
+        <article class="character-card min-h-[360px]">
           <div class="character-image character-miyabi">
             <span class="placeholder-cross"></span>
             <span class="character-number">01</span>
@@ -138,7 +138,7 @@
           </div>
         </article>
 
-        <article class="character-card">
+        <article class="character-card min-h-[360px]">
           <div class="character-image character-ellen art-placeholder">
             <span class="placeholder-cross"></span>
             <span class="character-number">02</span>
@@ -150,7 +150,7 @@
           </div>
         </article>
 
-        <article class="character-card">
+        <article class="character-card min-h-[360px]">
           <div class="character-image character-orphie art-placeholder">
             <span class="placeholder-cross"></span>
             <span class="character-number">03</span>
@@ -162,7 +162,7 @@
           </div>
         </article>
 
-        <article class="character-card">
+        <article class="character-card min-h-[360px]">
           <div class="character-image character-vivian art-placeholder">
             <span class="placeholder-cross"></span>
             <span class="character-number">04</span>
@@ -174,7 +174,7 @@
           </div>
         </article>
 
-        <article class="character-card">
+        <article class="character-card min-h-[360px]">
           <div class="character-image character-jane art-placeholder">
             <span class="placeholder-cross"></span>
             <span class="character-number">05</span>
@@ -186,7 +186,7 @@
           </div>
         </article>
 
-        <article class="character-card">
+        <article class="character-card min-h-[360px]">
           <div class="character-image character-koleda art-placeholder">
             <span class="placeholder-cross"></span>
             <span class="character-number">06</span>
@@ -206,7 +206,7 @@
          04 — COMBAT
          ======================================================= -->
     <section id="combat" class="section combat-section">
-      <div class="combat-media art-placeholder">
+      <div class="combat-media overflow-hidden art-placeholder">
         <iframe
         src="https://www.youtube-nocookie.com/embed/5LolsMA_rco"
         title="ZZZ Combat"
@@ -218,9 +218,9 @@
         <span class="art-small-label">COMBAT SYSTEM</span>
       </div>
 
-      <article class="combat-copy">
+      <article class="combat-copy self-center max-w-[650px] p-[5vw]">
         <p class="eyebrow">FAST. FLASHY. REACTIVE.</p>
-        <h2>Combat</h2>
+        <h2 class="text-[clamp(3rem,5.5vw,6.5rem)] uppercase leading-[0.9] tracking-[-0.07em]">Combat</h2>
         <h3>Encadena ataques. Cambia de agente. Rompe el ritmo.</h3>
         <p>
           Combina ataques normales, habilidades, evasiones y cambios de agente
@@ -231,7 +231,7 @@
           mantener la presión sobre los enemigos.
         </p>
 
-        <a class="accent-button" href="#bangboo">Ver más <span>→</span></a>
+        <a class="accent-button inline-flex items-center gap-[18px]" href="#bangboo">Ver más <span>→</span></a>
       </article>
 
       <span class="section-tag">04 — COMBAT</span>
@@ -241,7 +241,7 @@
          05 — BANGBOO
          ======================================================= -->
     <section id="bangboo" class="section bangboo-section">
-      <div class="bangboo-intro">
+      <div class="bangboo-intro mx-auto mb-10 w-full max-w-[1400px] rounded-[var(--radius-xl)] border border-black/10 bg-[#aaaeb2] p-[clamp(25px,4vw,45px)]">
         <p class="eyebrow">SMALL BUT USEFUL</p>
         <h2>Bangboo</h2>
         <p>
@@ -251,7 +251,7 @@
         </p>
       </div>
 
-      <div class="bangboo-grid">
+      <div class="bangboo-grid mx-auto grid w-full max-w-[1400px] grid-cols-3 gap-[38px]">
         <article class="bangboo-card">
           <div class="bangboo-image bangboo-1 art-placeholder"><span class="placeholder-cross"></span></div>
           <div>
@@ -261,7 +261,7 @@
           </div>
         </article>
 
-        <article class="bangboo-card">
+        <article class="bangboo-card grid min-w-0 overflow-hidden">
           <div class="bangboo-image bangboo-2 art-placeholder"><span class="placeholder-cross"></span></div>
           <div>
             <span>02</span>
@@ -270,7 +270,7 @@
           </div>
         </article>
 
-        <article class="bangboo-card">
+        <article class="bangboo-card grid min-w-0 overflow-hidden">
           <div class="bangboo-image bangboo-3 art-placeholder"><span class="placeholder-cross"></span></div>
           <div>
             <span>03</span>
@@ -279,7 +279,7 @@
           </div>
         </article>
 
-        <article class="bangboo-card">
+        <article class="bangboo-card grid min-w-0 overflow-hidden">
           <div class="bangboo-image bangboo-4 art-placeholder"><span class="placeholder-cross"></span></div>
           <div>
             <span>04</span>
@@ -288,7 +288,7 @@
           </div>
         </article>
 
-        <article class="bangboo-card">
+        <article class="bangboo-card grid min-w-0 overflow-hidden">
           <div class="bangboo-image bangboo-5 art-placeholder"><span class="placeholder-cross"></span></div>
           <div>
             <span>05</span>
@@ -297,7 +297,7 @@
           </div>
         </article>
 
-        <article class="bangboo-card">
+        <article class="bangboo-card grid min-w-0 overflow-hidden">
           <div class="bangboo-image bangboo-6 art-placeholder"><span class="placeholder-cross"></span></div>
           <div>
             <span>06</span>
@@ -310,11 +310,11 @@
   </main>
 
   <!-- Footer: separado visualmente como en el mockup -->
-  <footer class="site-footer">
+  <footer class="site-footer flex min-h-[66px] items-center justify-between px-6 py-4">
     <p>Contacto: <a href="mailto:thomas.hoyos@upb.edu.co">thomas.hoyos@upb.edu.co</a> <a href="mailto:esteban.puertam@upb.edu.co"> esteban.puertam@upb.edu.co</a></p>
     <p>@2026</p>
   </footer>
 
-  <script src="../JS/script.js"></script>
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>
