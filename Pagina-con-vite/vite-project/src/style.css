@@ -343,6 +343,29 @@ p {
     );
 }
 
+.video-loader {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--black);
+  transition: opacity .35s ease, visibility .35s ease;
+}
+
+.video-loader img {
+  width: min(180px, 25vw);
+  height: auto;
+  display: block;
+}
+
+.video-loader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .world-panel {
   position: relative;
   z-index: 2;

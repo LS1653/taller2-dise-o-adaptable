@@ -15,7 +15,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelector(".nav-links");
   const links = [...document.querySelectorAll(".nav-link")];
   const sections = [...document.querySelectorAll("main section[id]")];
+  const videoLoaders = document.querySelectorAll(".video-loader");
 
+  videoLoaders.forEach((loader) => {
+    const iframe = loader.parentElement?.querySelector("iframe");
+
+    if (!iframe) return;
+
+    iframe.addEventListener("load", () => {
+      loader.classList.add("is-hidden");
+    });
+  });
   // ---------------------------
   // Mobile navigation
   // ---------------------------
