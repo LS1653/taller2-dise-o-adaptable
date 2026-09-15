@@ -37,7 +37,7 @@ jobs:
         with:
           node-version: lts/*
           cache: npm
-          cache-dependency-path: vite-project/package-lock.json
+          cache-dependency-path: Pagina-con-vite/vite-project/package-lock.json
 
       - name: Install dependencies
         run: npm ci
